@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script src="./module1.js"></script>
+<script src="./module2.js"></script>
+<script>
+  module1.getName(); // module1 module1 innerFn()
+  module2.getName(); // module2 module2 innerFn()
+  module1.name = '111'; // 只是添加了一个私有属性，模块内的数据无法被改变
+
+</script>
+</html>
