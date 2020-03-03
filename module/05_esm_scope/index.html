@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<!-- 
+  脚本未声明为module(不支持import/export命令)，脚本内的es6声明将落在Script作用域内, es5声明将落在全局
+ -->
+<script src="./module3.js"></script>
+<!-- 
+  脚本声明为module，则每次import binding连接时 将创建一个Module作用域，多个模块之间Module独立
+ -->
+<script src="./src/index.js" type="module"></script>
+</html>

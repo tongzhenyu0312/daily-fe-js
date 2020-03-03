@@ -84,6 +84,11 @@ let readfile = _fs.readfile;
 
 > 上述通过对象访问的方式获取内容的加载方式成为`运行时加载`，因为只有在 `运行时` 才能得到这个对象，因此也就无法做 `静态优化`。
 
+### 特点
+
+> - 脚本未声明为module(不支持import/export命令)，脚本内的es6声明将落在Script作用域内, es5声明将落在全局
+> - 脚本声明为module，则每次import binding连接时 将创建一个Module作用域，多个模块之间Module独立
+
 ### 语法
 
 `esm`提供`import`命令实现模块导入,`export`命令实现`模块输出`
