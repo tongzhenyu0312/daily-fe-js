@@ -8,4 +8,4 @@ function foo() {
   }
 }
 
-console.log(bar); // 全局作用域无法访问 foo作用域绑定的变量a
+console.log(bar); // 全局作用域无法访问 froo作用域绑定的变量a

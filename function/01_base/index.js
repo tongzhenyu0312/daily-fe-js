@@ -5,11 +5,9 @@
 function foo() { }
 
 // 2. 函数表达式 Funtion Expression
-var bar = function (fn) { fn() }r
+var bar = function (fn) { fn() }
 
   // 3. 匿名函数
   (function () { })();
   bar(function () { console.log('我是匿名函数') });
-
-r
 
