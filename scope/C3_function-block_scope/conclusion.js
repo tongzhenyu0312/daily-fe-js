@@ -22,8 +22,8 @@ let a;
 /**
  * 顺序就是: 
  * 变量声明:
- *  var : 声明declaration/defined -> 初始化initialize -> 体现为 提升hoisting -> 所在作用域全位置可访问
- *  let/const : 声明declaration/defined -> 没有初始化，体现为没有提升 -> 代码赋值操作完成初始化 -> 赋值后后续可被访问
+ *  var : 声明declaration/defined -> (初始化initialize -> 体现为 提升hoisting) -> 所在作用域全位置可访问
+ *  let/const : 声明declaration/defined -> (没有初始化，体现为没有提升) -> 代码赋值操作完成初始化 -> 赋值后后续可被访问
  * 函数声明:
- *  function : 声明declaration/defined -> 初始化initialize -> 赋值 -> 体现为 提升hoisting -> 所在作用域全位置可访问
+ *  function : 声明declaration/defined -> (初始化initialize -> 赋值 -> 体现为 提升hoisting) -> 所在作用域全位置可访问
  */
