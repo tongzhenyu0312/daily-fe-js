@@ -5,8 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+<style>
+  .div1, .div2 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: red;
+  }
+  .div2 {
+    position: absolute;
+    background-color: blue;
+  }
+</style>
 <script src="./index.js"></script>
 <body>
-  
+  <div class="div1"></div>
+  <div class="div2"></div>
 </body>
+<script>
+  var div1 = document.getElementsByClassName('div1')[0];
+  var div2 = document.getElementsByClassName('div2')[0];
+  div1.addEventListener('click', function() {
+    console.log('div1');
+  })
+  div2.addEventListener('click', function() {
+    console.log('div2');
+  })
+</script>
 </html>
