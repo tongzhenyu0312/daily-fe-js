@@ -10,7 +10,7 @@ Function.prototype.myCall = function (ctx) {
 }
 
 /**
- * 经典的夺命连环
+ * 经典的夺命连环call
  * 从myCall可以看出，call的实现本质上是通过 默认绑定规则 执行函数从而改变this指向
  */
 function fn1() { console.log('fn1执行' + this) };
