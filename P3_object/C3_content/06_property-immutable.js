@@ -6,7 +6,7 @@
 
 /**
  * 1. 设置对象 常量属性
- * obj.a 不可修改，不可配置
+ * obj.a 不可修改，不可配置clar
  */
 var obj = {
   a: 2,
@@ -22,6 +22,19 @@ Object.defineProperty(obj, 'a', {
  */
 Object.preventExtensions(obj);
 
+/**
+ * 3. 密封 对象
+ * 使不可拓展新属性 (preventExtensions)，不可删除旧属性，不可配置属性 (configurable:false)
+ */
+Object.seal(obj);
+
+
+/**
+ * 4. 冻结 对象
+ * 在seal基础上 不可修改属性值(writable: false)
+ * 作用在对象上，实现不可变性的最高级别的方法
+ */
+Object.freeze(obj);
 
 
 
