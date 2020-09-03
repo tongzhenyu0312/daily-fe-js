@@ -1,12 +1,13 @@
+import { autobind } from 'core-decorators';
 
+class Person {
+  @autobind
+  getPerson() {
+    return this;
+  }
+}
 
-// for (var i=1; i<=5; i++) {
-//   foo(function timer() {
-//     console.log( i );
-//   });
-// }
+let person = new Person();
+let getPerson = person.getPerson;
 
-// function foo(fn) { 
-//   fn();
-// }
-
+getPerson() === person;

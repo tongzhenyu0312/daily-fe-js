@@ -1,0 +1,15 @@
+{
+  "name": "daily-fe-js",
+  "version": "1.0.0",
+  "description": "1. 变量的值住在哪里？存储在哪里？程序需要时如何找到他们？    提供答案的是一套规则: 作用域",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "core-decorators": "^0.20.0"
+  }
+}
